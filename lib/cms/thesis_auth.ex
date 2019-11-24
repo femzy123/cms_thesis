@@ -1,0 +1,15 @@
+defmodule Cms.ThesisAuth do
+  @moduledoc """
+  Contains functions for handling Thesis authorization.
+  """
+
+  @behaviour Thesis.Auth
+
+  def page_is_editable?(_conn) do
+    CmsWeb.Helpers
+    true
+
+    # Or use your own auth strategy. Learn more:
+    # https://github.com/infinitered/thesis-phoenix#authorization
+  end
+end
